@@ -134,4 +134,22 @@ body{
     font-family: "Open Sans" , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    width: auto;
+}
+
 /* ----------------------------CSS RESET END------------------------------- */

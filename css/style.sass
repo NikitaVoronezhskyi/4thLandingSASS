@@ -5,10 +5,6 @@ $white: #fff
 $whiteOpacity: rgba(255, 255, 255,0.75)
 $grey: #EBEBEB
 
-img
-    max-width: 100%
-    height: auto
-    width: auto
 
 .container
     max-width: 1440px
@@ -23,6 +19,7 @@ img
                 @media screen and ( max-width: 767px)
                     max-width: 540px
                     @media screen and ( max-width: 574px)
+                        padding: 0 10px
                         max-width: 100%
 
 body
@@ -68,10 +65,8 @@ body
     @media screen and ( max-width: 767px )
         padding: 24px 50px
         @media screen and ( max-width: 574px )
-            padding: 20px 41px
-            @media screen and ( max-width: 470px )
-                padding: 15px
-            @media screen and ( max-width: 320px )
+            padding: 20px 40px
+            @media screen and ( max-width: 400px)
                 padding: 15px
 
     &__dark
@@ -97,10 +92,8 @@ body
             font-size: 3.5rem
             @media screen and ( max-width: 470px )
                 font-size: 3rem
-                @media screen and ( max-width: 446px )
-                    font-size: 2.5rem
-                    @media screen and ( max-width: 320px )
-                        font-size: 2rem
+                @media screen and ( max-width: 320px )
+                    font-size: 2rem
     &-sm
         font-size: 1.6rem
         margin-top: 11px
@@ -110,6 +103,8 @@ body
         font-weight: 700
 
 .burger-btn
+    height: 40px
+    width: 34px
     cursor: pointer
     background: none
     color: $white
@@ -120,6 +115,8 @@ body
         display: none
         @media screen and ( max-width: 990px )
             display: block
+            @media screen and ( max-width: 574px )
+                font-size: 2rem
 
 .header
     background: $secondary
@@ -136,7 +133,7 @@ body
                 @media screen and ( max-width: 767px )
                     padding: 20px 40px
                     @media screen and ( max-width: 574px )
-                        padding: 10px 10px
+                        padding: 25px 10px
             &-burger
                 display: none
                 @media screen and ( max-width: 990px )
@@ -148,8 +145,8 @@ body
                 padding: 18px 0 18px 345px
                 @media screen and ( max-width: 767px )
                     padding: 18px 0 18px 300px
-                    @media screen and ( max-width: 767px )
-                        padding: 18px 0 18px 280px
+                    @media screen and ( max-width: 767px )  
+                        padding: 18px 0 18px 260px
                         @media screen and ( max-width: 574px )
                             justify-content: flex-end
 
@@ -187,6 +184,10 @@ body
     &-block
         position: relative
         z-index: 1
+        @media screen and ( max-width: 574px )
+            display: flex
+            flex-direction: column
+            gap: 10px
         &::after
             content: ""
             top: 50.6%
@@ -215,6 +216,9 @@ body
                     text-align: center
                     padding: 25px
                     @media screen and ( max-width: 574px )
+                        margin-top: 70px
+                        transform: none
+                        position: inherit
                         padding: 15px
             .common-text
                 margin-top: 32px
@@ -229,10 +233,6 @@ body
             @media screen and ( max-width: 574px )
                 display: flex
                 flex-direction: column
-                @media screen and ( max-width: 446px )
-                    gap: 80px
-                    @media screen and ( max-width: 446px )
-                        gap: 120px
             &-social
                 padding: 25px 0
                 background: $grey
@@ -367,6 +367,7 @@ body
                 margin-top: 50px
                 @media screen and ( max-width: 768px )
                     padding: 68px 5.5%
+                    justify-content: center
 
             &-items
                 display: flex
