@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://kit.fontawesome.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://kit.fontawesome.com/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@400;700&display=swap"
       rel="stylesheet"
@@ -28,7 +28,13 @@
                 <span class="common-text__white-opacity">Architecture</span>
                 Made With
               </p>
-              <img src="./img/heart.svg" alt="Heart" />
+              <img
+                width="1"
+                height="1"
+                loading="lazy"
+                src="./img/heart.svg"
+                alt="Heart"
+              />
             </div>
             <ul class="header__navbar-logo-list-items">
               <li>
@@ -74,8 +80,10 @@
                 >
               </li>
             </ul>
-            <button aria-label="Burger" class="fa-solid fa-bars burger-btn">
-          </button>
+            <button
+              aria-label="Burger"
+              class="fa-solid fa-bars burger-btn"
+            ></button>
           </div>
         </nav>
       </div>
@@ -102,7 +110,7 @@
             </div>
             <div class="promo-block__content">
               <div class="promo-block__content-picture">
-                <img width="1" height="1" src="./img/IMAGE.png" alt="Main" />
+                <img width="1" height="1" src="./img/IMAGE.webp" alt="Main" />
               </div>
               <div class="promo-block__content-social">
                 <ul class="promo-block__content-social-list">
@@ -237,7 +245,7 @@
                   height="1"
                   width="1"
                   loading="lazy"
-                  src="./img/HouseLivingRoom.png"
+                  src="./img/HouseLivingRoom.webp"
                   alt="House Living Room"
                 />
               </div>
@@ -247,7 +255,7 @@
                   height="1"
                   width="1"
                   loading="lazy"
-                  src="./img/OceanViewHouse.png"
+                  src="./img/OceanViewHouse.webp"
                   alt="Ocean View House"
                 />
               </div>
@@ -257,7 +265,7 @@
                   height="1"
                   width="1"
                   loading="lazy"
-                  src="./img/HouseDiningArea.png"
+                  src="./img/HouseDiningArea.webp"
                   alt="House Dining Area"
                 />
               </div>
@@ -399,6 +407,9 @@
             <div class="services-block-cards__card">
               <div class="services-block-cards__card-heading">
                 <img
+                  height="1"
+                  width="1"
+                  loading="lazy"
                   class="services-block-cards__card-heading-image"
                   src="./img/services6.svg"
                   alt="services Picture"
@@ -574,15 +585,18 @@
         </div>
       </div>
     </footer>
-    <script src="https://kit.fontawesome.com/7cc25a8466.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7cc25a8466.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-      document.body.addEventListener('click', (e) => {
-          const burgerBtn = e.target.closest('.burger-btn')
-          if (burgerBtn){
-              document.body.classList.toggle('burger-active')
-              burgerBtn.classList.toggle('fa-xmark')
-          }
-      })
-  </script>
+      document.body.addEventListener("click", (e) => {
+        const burgerBtn = e.target.closest(".burger-btn");
+        if (burgerBtn) {
+          document.body.classList.toggle("burger-active");
+          burgerBtn.classList.toggle("fa-xmark");
+        }
+      });
+    </script>
   </body>
 </html>

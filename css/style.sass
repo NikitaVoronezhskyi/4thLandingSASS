@@ -24,17 +24,14 @@ img
                     max-width: 540px
                     @media screen and ( max-width: 574px)
                         max-width: 100%
-                        
+
 body
     &.burger-active
         overflow: hidden
         .header__navbar-logo-list-items
             visibility: visible
             transform: translateX(0)
-        
 
-       
-        
 // СДЕЛАТЬ БУРГЕР
 
 .section
@@ -112,7 +109,6 @@ body
     &__bold
         font-weight: 700
 
-
 .burger-btn
     cursor: pointer
     background: none
@@ -124,10 +120,7 @@ body
         display: none
         @media screen and ( max-width: 990px )
             display: block
-        
 
-
-   
 .header
     background: $secondary
     &__navbar
@@ -174,20 +167,20 @@ body
                     flex: 1
                     justify-content: flex-end
                     @media screen and ( max-width: 990px )
-                        visibility: hidden; 
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        background-color: $secondary;
-                        z-index: 100000;
-                        height: 100%;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 50px;
-                        transition: 0.3s;
-                        transform: translateX(100%);
+                        visibility: hidden
+                        position: fixed
+                        top: 0
+                        left: 0
+                        width: 100%
+                        background-color: $secondary
+                        z-index: 100000
+                        height: 100%
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        gap: 50px
+                        transition: 0.3s
+                        transform: translateX(100%)
 
 .promo
     background: $secondary
@@ -303,7 +296,6 @@ body
                     height: 11px
                     width: 11px
                     background-color: $primary
-
 
     &-images
         display: flex
