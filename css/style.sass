@@ -1,0 +1,430 @@
+
+$primary: #99823d
+$secondary: #141414
+$white: #fff
+$whiteOpacity: rgba(255, 255, 255,0.75)
+$grey: #EBEBEB
+
+img
+    max-width: 100%
+    height: auto
+    width: auto
+
+.container
+    max-width: 1440px
+    width: 100%
+    margin: 0 auto
+    @media (max-width: 1399.98px)
+        max-width: 1140px
+        @media (max-width: 1199.98px)
+            max-width: 960px
+            @media screen and ( max-width: 990px)
+                max-width: 720px
+                @media screen and ( max-width: 767px)
+                    max-width: 540px
+                    @media screen and ( max-width: 574px)
+                        max-width: 100%
+                        
+body
+    &.burger-active
+        overflow: hidden
+        .header__navbar-logo-list-items
+            visibility: visible
+            transform: translateX(0)
+        
+
+       
+        
+// СДЕЛАТЬ БУРГЕР
+
+.section
+    padding: 135px 0px 0px 0px
+    @media screen and ( max-width: 574px )
+        padding: 50px 0 0 0
+
+.common-text
+    font-size: 16px
+    line-height: 1.5
+    font-family: "Open Sans"
+    color: $secondary
+    &__light
+        color: $primary
+    &__white
+        color: $white
+        &-opacity
+            color: $whiteOpacity
+    &__spread
+        text-decoration: none
+        font-size: 11px
+        text-transform: uppercase
+        letter-spacing: 2.7px
+
+.common-btn
+    font-family: "Open Sans"
+    text-transform: uppercase
+    cursor: pointer
+    letter-spacing: 2.7px
+    color: $white
+    background: $primary
+    padding: 24px 70px
+    border: none
+    @media screen and ( max-width: 767px )
+        padding: 24px 50px
+        @media screen and ( max-width: 574px )
+            padding: 20px 41px
+            @media screen and ( max-width: 470px )
+                padding: 15px
+            @media screen and ( max-width: 320px )
+                padding: 15px
+
+    &__dark
+        background: $secondary
+    &-lg
+        padding: 25px 120px
+        @media screen and ( max-width: 574px )
+            padding: 25px 55px
+
+    &-sm
+        padding: 17px 36px
+
+.common-title
+    font-family: "Teko"
+    font-size: 3.3rem
+    @media screen and ( max-width: 767px )
+        font-size: 2rem
+        @media screen and ( max-width: 574px )
+            font-size: 1.8rem
+    &-lg
+        font-size: 4.2rem
+        @media screen and ( max-width: 990px )
+            font-size: 3.5rem
+            @media screen and ( max-width: 470px )
+                font-size: 3rem
+                @media screen and ( max-width: 446px )
+                    font-size: 2.5rem
+                    @media screen and ( max-width: 320px )
+                        font-size: 2rem
+    &-sm
+        font-size: 1.6rem
+        margin-top: 11px
+        @media screen and ( max-width: 574px )
+            font-size: 1.5rem
+    &__bold
+        font-weight: 700
+
+
+.burger-btn
+    cursor: pointer
+    background: none
+    color: $white
+    border: none
+    font-size: 1.5rem
+    z-index: 150000
+    &:before
+        display: none
+        @media screen and ( max-width: 990px )
+            display: block
+        
+
+
+   
+.header
+    background: $secondary
+    &__navbar
+        position: relative
+        &-logo
+            position: absolute
+            left: 0
+            padding: 44px 68px
+            background: $primary
+            z-index: 10
+            @media screen and ( max-width: 990px )
+                padding: 30px 60px
+                @media screen and ( max-width: 767px )
+                    padding: 20px 40px
+                    @media screen and ( max-width: 574px )
+                        padding: 10px 10px
+            &-burger
+                display: none
+                @media screen and ( max-width: 990px )
+                    display: block
+            &-list
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 18px 0 18px 345px
+                @media screen and ( max-width: 767px )
+                    padding: 18px 0 18px 300px
+                    @media screen and ( max-width: 767px )
+                        padding: 18px 0 18px 280px
+                        @media screen and ( max-width: 574px )
+                            justify-content: flex-end
+
+                &__left
+                    display: flex
+                    gap: 5px
+                    text-align: center
+                    @media screen and ( max-width: 574px )
+                        display: none
+                    .common-text
+                        font-size: 10px
+                &-items
+                    display: flex
+                    gap: 5%
+                    flex: 1
+                    justify-content: flex-end
+                    @media screen and ( max-width: 990px )
+                        visibility: hidden; 
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        background-color: $secondary;
+                        z-index: 100000;
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 50px;
+                        transition: 0.3s;
+                        transform: translateX(100%);
+
+.promo
+    background: $secondary
+    &-block
+        position: relative
+        z-index: 1
+        &::after
+            content: ""
+            top: 50.6%
+            left: 63%
+            position: absolute
+            height: 49.4%
+            width: 37.5%
+            background: $primary
+            z-index: 1
+            @media screen and ( max-width: 990px )
+                width: 0
+        &__title
+            background: $white
+            position: absolute
+            transform: translateY(25%)
+            top: 0
+            right: 10%
+            padding: 67px
+            z-index: 20
+            box-sizing: border-box
+            max-width: 584px
+            @media screen and ( max-width: 990px )
+                padding: 50px
+                @media screen and ( max-width: 767px )
+                    right: 0
+                    text-align: center
+                    padding: 25px
+                    @media screen and ( max-width: 574px )
+                        padding: 15px
+            .common-text
+                margin-top: 32px
+                @media screen and ( max-width: 767px )
+                    margin-top: 10px
+            &-btns
+                display: flex
+                justify-content: space-between
+                margin-top: 15px
+        &__content
+            z-index: 1
+            @media screen and ( max-width: 574px )
+                display: flex
+                flex-direction: column
+                @media screen and ( max-width: 446px )
+                    gap: 80px
+                    @media screen and ( max-width: 446px )
+                        gap: 120px
+            &-social
+                padding: 25px 0
+                background: $grey
+                &-list
+                    display: flex
+                    gap: 4%
+                    @media screen and ( max-width: 574px )
+                        flex-direction: column
+                        align-items: center
+                        gap: 30px
+
+.portfolio
+    background: $grey
+    @media screen and ( max-width: 574px )
+        padding: 50px 0 50px 0
+    .portfolio-items
+        display: flex
+        flex-direction: column
+        gap: 58px
+    .block-wrapper
+        padding: 0 10%
+    &-block
+        &__text
+            display: flex
+            gap: 5.5%
+            @media screen and ( max-width: 990px )
+                flex-direction: column
+                gap: 50px
+            &-content
+                display: flex
+                flex-direction: column
+                gap: 16px
+                max-width: 60%
+                @media screen and ( max-width: 990px )
+                    max-width: 100%
+                    @media screen and ( max-width: 574px )
+                        display: flex
+                        flex-direction: column
+            &-article
+                max-width: 32%
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                gap: 50px
+                @media screen and ( max-width: 990px )
+                    max-width: 80%
+
+    &-list
+        &__items
+            margin-top: 59px
+            display: flex
+            justify-content: space-between
+            text-align: center
+            @media screen and ( max-width: 990px )
+                flex-direction: column
+                gap: 50px
+            &-item
+                &::after
+                    position: absolute
+                    content: " "
+                    height: 11px
+                    width: 11px
+                    background-color: $primary
+
+
+    &-images
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 34px
+        transform: translateY(60%)
+        @media screen and ( max-width: 990px )
+            flex-direction: column
+            transform: translateY(0%)
+
+        &-block
+            height: auto
+            width: 100%
+            &-picture
+                height: auto
+                width: 100%
+
+.services
+    padding: 300px 0 107px 0
+    @media screen and ( max-width: 990px )
+        padding: 100px 0 107px 0
+    &-block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &__title
+            text-align: center
+            max-width: 50rem
+        &-cards
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            margin-top: 82px
+            &__card
+                padding: 40px
+                max-width: 18.25rem
+                @media screen and ( max-width: 990px )
+                    padding: 30px
+                &-heading
+                    display: flex
+                    align-items: center
+                    gap: 17px
+            &-text
+                margin-top: 18px
+        &__btn
+            margin-top: 122px
+
+.partners
+    background: $grey
+    &-block
+        &__list
+            display: flex
+            align-items: center
+            justify-content: space-around
+            @media screen and ( max-width: 990px )
+                flex-direction: column
+                gap: 50px
+
+        &__nav
+            transform: translateY(17%)
+            display: flex
+            align-items: flex-end
+            padding: 80px 5.5%
+            margin-top: 135px
+            background-color: #3D3D3D
+            @media screen and ( max-width: 990px )
+                margin-top: 50px
+                @media screen and ( max-width: 768px )
+                    padding: 68px 5.5%
+
+            &-items
+                display: flex
+                flex: 1
+                justify-content: flex-end
+                gap: 2.8%
+                @media screen and ( max-width: 768px )
+                    display: none
+
+.footer
+    position: relative
+    background: $secondary
+    display: flex
+    align-items: flex-end
+    z-index: 10
+    &-block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &__form
+            transform: translateY(-20%)
+            display: flex
+            justify-content: center
+            padding: 5%
+            background: $primary
+            gap: 17px
+            z-index: 50
+            width: 79%
+            margin: 0 auto
+            @media screen and ( max-width: 574px )
+                flex-direction: column
+            &-input
+                flex: 1
+                font-weight: 700
+                font-family: "Open Sans"
+                text-transform: none
+                background: $white
+                border: none
+                padding: 1rem
+            &-button
+                font-weight: 700
+        &__bottom
+            padding: 18px
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            @media screen and ( max-width: 574px )
+                flex-direction: column
+                align-items: center
+                gap: 30px
+            &-list
+                display: flex
+                gap: 17px
